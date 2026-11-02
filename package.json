@@ -1,0 +1,14 @@
+{
+  "name": "poisson3d-cert",
+  "version": "0.1.0",
+  "description": "Deterministic 3D Poisson-disk sampling with a minimum-distance certificate and a measured Bridson-vs-dart comparison",
+  "type": "module",
+  "main": "src/core.mjs",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "bench": "node bench/bench.mjs"
+  },
+  "license": "MIT",
+  "author": "llinok111",
+  "engines": {"node": ">=20"}
+}
