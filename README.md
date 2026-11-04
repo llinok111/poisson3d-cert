@@ -39,9 +39,10 @@ Unit cube, 3 seeds (median time), k=30, 50,000 coverage probes, radius `r`:
 | 0.06 | dart | 3,543 | 15.3 ms | 0.4007 | 0 violations | 0.927r | 1.197r |
 
 At the same accepted count, dart throwing is **1.02× / 1.17× / 1.06× faster** and its
-p99 gap is within 0.7% of Bridson's (sometimes better). Density is dictated by the
-radius, not the sampler. This is the honest result: with a grid-accelerated rejection
-test, the classic "Bridson is faster" claim does not hold in JavaScript at these sizes.
+p99 gap is within 0.81% of Bridson's (sometimes better; worst is +0.81% at r=0.05).
+Density is dictated by the radius, not the sampler. This is the honest result: with a
+grid-accelerated rejection test, the classic "Bridson is faster" claim does not hold
+in JavaScript at these sizes.
 
 What Bridson *does* give you: no target count, one pass, and a set that the active-list
 termination makes maximal (no further point can be added at distance `r`). Dart
